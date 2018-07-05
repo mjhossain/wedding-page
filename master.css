@@ -1,9 +1,35 @@
+:root {
+  --color1: #BBD4CB;
+  --color2: #EDF2F2;
+  --color3: #B7D3DE;
+  --color4: #F5DD86;
+  --color5: #EBB75B;
+  --color6: #69ADDF;
+  --color7: #88ECF4;
+  --color8: #E0D6C5;
+  --color9: #FFFEFB;
+  --color10: #FB8590;
+  --font: 'Sacramento', cursive;
+}
+
 *{
   padding: 0;
   margin: 0;
 }
 
-
 .clock{
   margin-top: 10%;
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+#left {
+  height: 100vh;
+  /* width: 100%; */
+  background-color: var(--color10);
 }
