@@ -19,5 +19,6 @@ $(document).ready(function() {
   clock = $('.clock').FlipClock(diff, {
     clockFace: 'DailyCounter',
     countdown: true
+    // showSeconds: false
   });
 });
