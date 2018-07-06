@@ -104,8 +104,12 @@
 
 .sectionHead {
   height: 100vh;
+  display: flex;
 }
 
+#downArrow {
+  align-self: flex-end;
+}
 
 
 .sectionOne {
@@ -127,4 +131,14 @@
   font-family: var(--font2);
   text-align: justify;
   line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
 }
