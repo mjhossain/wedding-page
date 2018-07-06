@@ -8,7 +8,7 @@
   --color7: #88ECF4;
   --color8: #E0D6C5;
   --color9: #FFFEFB;
-  --color10: #FB8590;
+  --color10: #FFB9BB;
   --font: 'Sacramento', cursive;
   --font2: 'Roboto', sans-serif;
 }
@@ -105,12 +105,24 @@
 .sectionHead {
   height: 100vh;
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color10);
 }
 
-#downArrow {
-  align-self: flex-end;
+
+#OrnaText {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20%;
+  /* clear: both; */
 }
 
+#downSign {
+  height: 50px;
+  width: 50px;
+}
 
 .sectionOne {
   height: 100vh;
