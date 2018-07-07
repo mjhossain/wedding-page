@@ -1,0 +1,349 @@
+:root {
+  --color1: #BBD4CB;
+  --color2: #EDF2F2;
+  --color3: #B7D3DE;
+  --color4: #F5DD86;
+  --color5: #EBB75B;
+  --color6: #69ADDF;
+  --color7: #88ECF4;
+  --color8: #E0D6C5;
+  --color9: #FFFEFB;
+  --color10: #FFB9BB;
+  --font: 'Sacramento', cursive;
+  --font2: 'Roboto', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+ {
+
+
+
+    .clock{
+      /* margin-top: 10%; */
+      position: absolute;
+      top: 70%;
+      left: 3%;
+    }
+
+    #mainContainer {
+      /* width: 100vw;
+      height: 100vh; */
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "left left left right right";
+    }
+
+    #left {
+      height: 100vh;
+      /* width: 100%; */
+      background-color: var(--color10);
+      grid-area: left;
+      background: url('media/images/Image7.jpg');
+      background-size: 100% 100vh;
+    }
+
+    #right {
+      grid-area: right;
+      height: 100vh;
+      background-color: var(--color2);
+      -webkit-box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      -moz-box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      overflow-y: scroll;
+    }
+
+     #right > div { flex-shrink: 0; }
+
+    #left > img {
+      width: 100%;
+      height: 100vh;
+      z-index: -2;
+    }
+
+    #heading {
+      font-family: var(--font);
+      font-size: 5em;
+      color: #20202c;
+      position: absolute;
+      top: 33%;
+      line-height: 101%;
+      left: 38%;
+    }
+
+    #desc {
+      font-family: var(--font2);
+      font-size: 2em;
+      position: absolute;
+      top: 63%;
+      line-height: 101%;
+      left: 35%;
+      color: var(--color2);
+    }
+
+    #descArea {
+      /* height: 100%; */
+      /* width: 100%; */
+      /* background-color: var(--color3); */
+    }
+
+    .flip-clock-label {
+      font-size: 2em;
+      position: absolute;
+      text-align: center;
+    }
+
+
+
+    /* Sections */
+
+
+    .sectionHead {
+      height: 100vh;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color10);
+      clip-path: polygon(0 0,100% 0, 100% calc(100% - 3vw), 0 100%);
+      margin-bottom: -3vw;
+    }
+
+
+    #OrnaText {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20%;
+      /* clear: both; */
+    }
+
+    #downSign {
+      height: 50px;
+      width: 50px;
+    }
+
+    #downSignHome {
+      visibility: hidden;
+    }
+
+    .sectionOne {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      /* background-color: var(--color2); */
+    }
+
+    .sectionTwo {
+      height: 100%;
+      /* width: 100%; */
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      /* background-color: var(--color3); */
+    }
+
+    #sectionHeading {
+      font-family: var(--font);
+      font-size: 3em;
+    }
+
+    #sectionDesc {
+      font-family: var(--font2);
+      text-align: justify;
+      line-height: 1.7em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {overflow: -moz-scrollbars-none;}
+
+
+
+}
+
+
+/* --------------Mobile CSS--------------------- */
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+  {
+
+    #mainContainer {
+      /* width: 100vw;
+      height: 100vh; */
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+
+    }
+
+    #left {
+      height: 100vh;
+      /* width: 100%; */
+      background-color: var(--color10);
+      /* grid-area: left; */
+      background: url('media/images/Image7.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #downSignHome {
+      height: 50px;
+      width: 50px;
+      visibility: visible;
+      position: absolute;
+      top: 80%;
+      line-height: 101%;
+      left: 43%;
+    }
+
+    #right {
+      /* grid-area: right; */
+      height: 100vh;
+      background-color: var(--color2);
+      -webkit-box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      -moz-box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      box-shadow: -8px 2px 34px -17px rgba(0,0,0,0.75);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      overflow-y: scroll;
+    }
+
+     #right > div { flex-shrink: 0; }
+
+    #left > img {
+      width: 100%;
+      height: 100vh;
+      z-index: -2;
+    }
+
+    #heading {
+      font-family: var(--font);
+      font-size: 2em;
+      color: var(--color2);
+      position: absolute;
+      top: 30%;
+      line-height: 101%;
+      left: 65%;
+    }
+
+    #desc {
+      font-family: var(--font2);
+      font-size: 2em;
+      position: absolute;
+      top: 50%;
+      line-height: 101%;
+      left: 5%;
+      color: var(--color6);
+    }
+
+    #descArea {
+      /* height: 100%; */
+      /* width: 100%; */
+      /* background-color: var(--color3); */
+    }
+
+    .flip-clock-label {
+      font-size: 2em;
+      position: absolute;
+      text-align: center;
+    }
+
+
+
+    /* Sections */
+
+
+    .sectionHead {
+      height: 100vh;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color10);
+      clip-path: polygon(0 0,100% 0, 100% calc(100% - 3vw), 0 100%);
+      margin-bottom: -3vw;
+    }
+
+
+    #OrnaText {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20%;
+      /* clear: both; */
+    }
+
+    #downSign {
+      height: 50px;
+      width: 50px;
+    }
+
+    .sectionOne {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      /* background-color: var(--color2); */
+    }
+
+    .sectionTwo {
+      height: 100%;
+      /* width: 100%; */
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      /* background-color: var(--color3); */
+    }
+
+    #sectionHeading {
+      font-family: var(--font);
+      font-size: 3em;
+    }
+
+    #sectionDesc {
+      font-family: var(--font2);
+      text-align: justify;
+      line-height: 1.7em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+}
