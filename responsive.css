@@ -204,7 +204,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-auto-rows: auto;
-
+      overflow-x: hidden;
     }
 
     #left {
@@ -222,7 +222,7 @@
       width: 50px;
       visibility: visible;
       position: absolute;
-      top: 80%;
+      top: 85%;
       line-height: 101%;
       left: 43%;
     }
