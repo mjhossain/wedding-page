@@ -502,3 +502,12 @@
 
 
 }
+
+
+
+/* Timer CSS below */
+
+#sketch-holder canvas {
+  height: 100px;
+  width: 100px;
+}
