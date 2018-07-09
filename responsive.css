@@ -78,7 +78,7 @@
       position: absolute;
       top: 33%;
       line-height: 101%;
-      left: 38%;
+      left: 35%;
     }
 
     #desc {
@@ -87,7 +87,7 @@
       position: absolute;
       top: 63%;
       line-height: 101%;
-      left: 35%;
+      left: 32%;
       color: var(--color2);
     }
 
