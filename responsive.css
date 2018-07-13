@@ -123,7 +123,7 @@
     #OrnaText {
       max-width: 100%;
       height: auto;
-      margin-bottom: 20%;
+      margin-bottom: 5%;
       /* clear: both; */
     }
 
@@ -510,4 +510,5 @@
 #sketch-holder canvas {
   height: 100px;
   width: 100px;
+  margin-bottom: 5%;
 }

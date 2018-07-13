@@ -1,7 +1,7 @@
 // Months start at 0 and the timer caluclates to Midnight
 // use month - 1 to get an accurate count down
 
-let ed = new Date(2018, 8-1, 9);
+let ed = new Date(2018, 8-1, 17);
 
 function setup() {
   pixelDensity(2.0);
@@ -51,7 +51,7 @@ function draw() {
 }
 
 function shapeCreator(timer) {
-  stroke(220);
+  stroke(220); // CircleBorder
   strokeWeight(1);
   fill(255);
   ellipse(47, 35, 65, 65);
@@ -59,7 +59,7 @@ function shapeCreator(timer) {
   ellipse(197, 35, 65, 65);
   ellipse(272, 35, 65, 65);
 
-  stroke(48, 188, 200);
+  stroke(243,94,98); // TimeFillColor
   noFill();
   strokeWeight(3);
   strokeCap(ROUND);
@@ -73,7 +73,7 @@ function shapeCreator(timer) {
   textAlign(CENTER);
   textFont('DINPro-Light');
   noStroke();
-  fill(48, 188, 200);
+  fill(243,94,98); //  NumbersColor
 
   text(Math.round(timer.days.text), 47, 37);
   text(Math.round(timer.hours.text), 122, 37);
@@ -82,7 +82,7 @@ function shapeCreator(timer) {
 
   textSize(10);
   textAlign(CENTER);
-  fill(125);
+  fill(243,94,98); // Text Fill Color
   text("DAYS", 47, 52);
   text("HOURS", 122, 52);
   text("MINS", 197, 52);
