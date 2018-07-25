@@ -211,6 +211,7 @@
       background: url('media/images/Image7.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
+      display: none;
     }
 
     #downSignHome {

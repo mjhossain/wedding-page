@@ -51,7 +51,7 @@ function draw() {
 }
 
 function shapeCreator(timer) {
-  stroke(220); // CircleBorder
+  stroke(100); // CircleBorder
   strokeWeight(1);
   fill(255);
   ellipse(47, 35, 65, 65);
