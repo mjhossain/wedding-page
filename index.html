@@ -10,6 +10,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
 
@@ -17,20 +19,16 @@
   <div id="mainContainer">
     <div id="left">
 
-
-
-      <h1 id="heading">Tas <br>& Repon</h1>
-      <div id="descArea">
-        <p id="desc">We are so excited and<br /> can't wait to see you. <br>Be the part of our <br />most memoriable day</p>
+      <div class="slider">
+        <img src="media/images/Image7.jpg" alt="">
+        <img src="media/images/Image6.jpg" alt="">
+        <img src="media/images/Image5.jpg" alt="">
+        <img src="media/images/Image4.jpg" alt="">
       </div>
 
-      <a href="#sectionHead" id="downArrow">
-        <img id="downSignHome" src="media/images/downArrow.png" alt="Down Arrow">
-      </a>
-
-      <!-- <div class="clock"></div> -->
-      <!-- <img src="media/images/Image3.jpg" alt="Wedding Image"> -->
     </div>
+
+
     <div id="right">
       <div class="sectionHead" id="sectionHead">
         <img id="OrnaText" src="media/images/OrnaText.png" alt="Text Image">
@@ -78,6 +76,18 @@
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="countdown.js"></script>
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000
+      });
+    })
+  </script>
 
   </body>
 </html>
